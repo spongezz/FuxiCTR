@@ -44,7 +44,7 @@ DCN_default: # This is a config template
     learning_rate: 1.0e-3
     embedding_regularizer: 1.e-8
     net_regularizer: 0
-    batch_size: 4
+    batch_size: 1
     embedding_dim: 4
     dnn_hidden_units: [64, 32]
     dnn_activations: relu

@@ -62,15 +62,16 @@ if __name__ == '__main__':
     
     train_gen, valid_gen = TFRecordDataLoader(feature_map, stage='train', **params).make_iterator()
     model.fit(train_gen, validation_data=valid_gen, **params)
+
+    for i in train_gen:
+        model(model.get_inputs(i))
+        break
+    model.save("model/SaveModel/1")
     logging.info('****** Validation evaluation ******')
     valid_result = model.evaluate(valid_gen)
-    for i in train_gen:
-        model(i)
-        break
-    model.save("./model/SavedModels/1")
     del train_gen, valid_gen
     gc.collect()
-    
+   
     logging.info('******** Test evaluation ********')
     test_gen = TFRecordDataLoader(feature_map, stage='test', **params).make_iterator()
     test_result = {}

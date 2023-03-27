@@ -25,7 +25,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST*
-**/*.rfrecord
+**/*.tfrecord
 **/*.data-00000-of-00001
 /data
 # PyInstaller

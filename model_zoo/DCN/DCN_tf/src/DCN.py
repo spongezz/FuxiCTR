@@ -17,7 +17,7 @@
 import tensorflow as tf
 from fuxictr.tensorflow.models import BaseModel
 from fuxictr.tensorflow.layers import FeatureEmbedding, MLP_Block, CrossNet, Linear
-
+import logging
 
 class DCN(BaseModel):
     def __init__(self, 
@@ -66,3 +66,4 @@ class DCN(BaseModel):
         y_pred = self.output_activation(y_pred)
         return_dict = {"y_pred": y_pred}
         return return_dict
+    
