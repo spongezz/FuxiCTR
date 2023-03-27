@@ -1,8 +1,8 @@
 ### Tiny data for tests only
-tiny_tfrecord:
+Taobao: # dataset_id
     data_root: ../../../data/
     data_format: tfrecord
-    train_data: ../../../data/tiny_tfrecord/train.tfrecord
-    valid_data: ../../../data/tiny_tfrecord/valid.tfrecord
-    test_data: ../../../data/tiny_tfrecord/test.tfrecord
+    train_data: ../../../data/Taobao/train.tfrecord
+    valid_data: ../../../data/Taobao/valid.tfrecord
+    test_data: ../../../data/Taobao/test.tfrecord
 

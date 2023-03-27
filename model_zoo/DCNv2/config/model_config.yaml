@@ -8,13 +8,12 @@ Base:
     eval_steps: null
     debug_mode: False
     group_id: null
-    use_features: null
+    ordered_features: null
     feature_specs: null
-    feature_config: null
 
 DCNv2_test:
     model: DCNv2
-    dataset_id: tiny_h5
+    dataset_id: Taobao
     loss: 'binary_crossentropy'
     metrics: ['logloss', 'AUC']
     task: binary_classification

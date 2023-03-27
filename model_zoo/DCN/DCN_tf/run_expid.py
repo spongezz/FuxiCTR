@@ -59,12 +59,12 @@ if __name__ == '__main__':
     
     model_class = getattr(model_zoo, params['model'])
     model = model_class(feature_map, **params)
-
+    
     train_gen, valid_gen = TFRecordDataLoader(feature_map, stage='train', **params).make_iterator()
     model.fit(train_gen, validation_data=valid_gen, **params)
-
     logging.info('****** Validation evaluation ******')
     valid_result = model.evaluate(valid_gen)
+    model.save("./model/SavedModels/1")
     del train_gen, valid_gen
     gc.collect()
     
@@ -73,7 +73,6 @@ if __name__ == '__main__':
     test_result = {}
     if test_gen:
       test_result = model.evaluate(test_gen)
-    
     result_filename = Path(args['config']).name.replace(".yaml", "") + '.csv'
     with open(result_filename, 'a+') as fw:
         fw.write(' {},[command] python {},[exp_id] {},[dataset_id] {},[train] {},[val] {},[test] {}\n' \

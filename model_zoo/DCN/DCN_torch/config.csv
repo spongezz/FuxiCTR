@@ -1,0 +1,6 @@
+ 20230307-161458,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] tiny_h5,[train] N.A.,[val] logloss: 0.679416 - AUC: 0.989583,[test] logloss: 0.679416 - AUC: 0.989583
+ 20230307-162234,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] tiny_h5,[train] N.A.,[val] logloss: 0.679416 - AUC: 0.989583,[test] logloss: 0.679416 - AUC: 0.989583
+ 20230308-183437,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.197572 - AUC: 0.643361,[test] logloss: 0.195935 - AUC: 0.603140
+ 20230308-200029,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.196362 - AUC: 0.657769,[test] logloss: 0.196700 - AUC: 0.608234
+ 20230314-163345,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.196362 - AUC: 0.657769,[test] logloss: 0.196700 - AUC: 0.608234
+ 20230327-145540,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.196654 - AUC: 0.613340,[test] logloss: 0.196700 - AUC: 0.608234

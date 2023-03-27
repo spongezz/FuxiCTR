@@ -8,13 +8,12 @@ Base:
     eval_steps: null
     debug_mode: False
     group_id: null
-    use_features: null
+    ordered_features: null
     feature_specs: null
-    feature_config: null
 
 DCN_test:
     model: DCN
-    dataset_id: tiny_h5
+    dataset_id: Taobao
     loss: 'binary_crossentropy'
     metrics: ['logloss', 'AUC']
     task: binary_classification
@@ -29,7 +28,7 @@ DCN_test:
     crossing_layers: 3
     net_dropout: 0
     batch_norm: False
-    epochs: 1
+    epochs: 10
     shuffle: True
     seed: 2019
     monitor: 'AUC'
@@ -37,7 +36,7 @@ DCN_test:
 
 DCN_default: # This is a config template
     model: DCN
-    dataset_id: TBD
+    dataset_id: Taobao
     loss: 'binary_crossentropy'
     metrics: ['logloss', 'AUC']
     task: binary_classification

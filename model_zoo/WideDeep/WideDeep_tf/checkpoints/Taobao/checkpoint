@@ -1,0 +1,2 @@
+model_checkpoint_path: "WideDeep_test.model"
+all_model_checkpoint_paths: "WideDeep_test.model"

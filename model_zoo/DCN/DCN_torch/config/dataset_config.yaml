@@ -1,8 +1,23 @@
-### Tiny data for tests only
-tiny_h5:
+Taobao: # dataset_id
     data_root: ../../../data/
-    data_format: h5
-    train_data: ../../../data/tiny_h5/train.h5
-    valid_data: ../../../data/tiny_h5/valid.h5
-    test_data: ../../../data/tiny_h5/test.h5
-
+    data_format: csv
+    train_data: ../../../data/Taobao/train.csv
+    valid_data: ../../../data/Taobao/valid.csv
+    test_data: ../../../data/Taobao/test.csv
+    min_categr_count: 1
+    feature_cols:
+        [{name: "userid", active: True, dtype: str, type: categorical},
+         {name: "adgroup_id", active: True, dtype: str, type: categorical},
+         {name: "pid", active: True, dtype: str, type: categorical},
+         {name: "cate_id", active: True, dtype: str, type: categorical},
+         {name: "campaign_id", active: True, dtype: str, type: categorical},
+         {name: "customer", active: True, dtype: str, type: categorical},
+         {name: "brand", active: True, dtype: str, type: categorical},
+         {name: "cms_segid", active: True, dtype: str, type: categorical},
+         {name: "cms_group_id", active: True, dtype: str, type: categorical},
+         {name: "final_gender_code", active: True, dtype: str, type: categorical},
+         {name: "age_level", active: True, dtype: str, type: categorical},
+         {name: "pvalue_level", active: True, dtype: str, type: categorical},
+         {name: "shopping_level", active: True, dtype: str, type: categorical},
+         {name: "occupation", active: True, dtype: str, type: categorical}]
+    label_col: {name: clk, dtype: float}

@@ -1,0 +1,10 @@
+ 20230322-230426,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.509422 - AUC: 0.807292,[test] logloss: 0.509422 - AUC: 0.807292
+ 20230322-230446,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.247018 - AUC: 0.960938,[test] logloss: 0.247018 - AUC: 0.960938
+ 20230326-205027,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.677671 - AUC: 1.000000,[test] logloss: 0.677671 - AUC: 1.000000
+ 20230326-205204,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.677671 - AUC: 1.000000,[test] logloss: 0.677671 - AUC: 1.000000
+ 20230326-231214,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.811567 - AUC: 0.498176,[test] logloss: 0.808303 - AUC: 0.497807
+ 20230326-231708,[command] python run_expid.py --expid DCN_default --gpu 0,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.677671 - AUC: 1.000000,[test] logloss: 0.677671 - AUC: 1.000000
+ 20230326-234904,[command] python run_expid.py --expid DCN_default --gpu 0,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.677671 - AUC: 1.000000,[test] logloss: 0.677671 - AUC: 1.000000
+ 20230326-235340,[command] python run_expid.py --expid DCN_default --gpu 0,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.677671 - AUC: 1.000000,[test] logloss: 0.677671 - AUC: 1.000000
+ 20230326-235435,[command] python run_expid.py --expid DCN_default --gpu 0,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.361838 - AUC: 0.723958,[test] logloss: 0.361838 - AUC: 0.723958
+ 20230327-035955,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.811567 - AUC: 0.498203,[test] logloss: 0.808303 - AUC: 0.497844

@@ -66,8 +66,11 @@ if __name__ == '__main__':
     model.count_parameters() # print number of parameters used in model
 
     train_gen, valid_gen = H5DataLoader(feature_map, stage='train', **params).make_iterator()
+    for i in train_gen:
+        logging.info(f"{i.shape}")
+        break
     model.fit(train_gen, validation_data=valid_gen, **params)
-
+    
     logging.info('****** Validation evaluation ******')
     valid_result = model.evaluate(valid_gen)
     del train_gen, valid_gen

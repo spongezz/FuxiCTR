@@ -1,7 +1,6 @@
 ## DCN
 
-| [Overview](#Overview) | [Configuration](#Configuration) | [Implementation](#Implementation) | [Discussion](#Discussion) |
-| :--: | :--: | :--: | :--: |
+**Index:**  [Overview](#Overview) | [Configuration](#Configuration) | [Implementation](#Implementation) | [Discussion](#Discussion)
 
 ### Overview
 
@@ -12,7 +11,7 @@ DCN is a CTR prediction model that learns explicit and bounded-degree cross feat
 **Model structure:**
 
 <div align="center">
-    <img width="50%" src="https://cdn.jsdelivr.net/gh/xue-pai/FuxiCTR@main/docs/img/DCN.PNG">
+    <img width="50%" src="../../../docs/img/DCN.PNG">
 </div>
 
 **Key components:**
@@ -59,9 +58,9 @@ The `model_config.yaml` file contains all the model hyper-parameters as follows.
 | pickle_feature_encoder | bool            | True                      | whether to pickle the feature encoder during preprocessing. It is used when input ```data_format="csv"```.                                                                                                        |
 | save_best_only         | bool            | True                      | whether to save the best model checkpoint only                                                                                                                                                                    |
 | eval_steps             | int/None        | None                      | evaluate the model on validation data every ```eval_steps```. By default, ```None``` means evaluation every epoch.                                                                                                |
-| debug_mode             | bool            | False                     | used for code testing. When setting it to ```True```, the ```experiment_id``` will be randomly generated to avoid interleaving when running multiple processes for parameter tunning by ```run_param_tuner.py```. |
+| debug_mode             | bool            | False                     | Used for code testing. When setting it to ```True```, the ```experiment_id``` will be randomly generated to avoid interleaving when running multiple processes for parameter tunning by ```run_param_tuner.py```. |
 | group_id               | None (optional) | None                      | required for metrics like ```gAUC```, ```NDCG```.                                                                                                                                                                 |
-| use_features       | None (optional) | None                      | used for feature selection, i.e., only selecting an ordered subset of features as model input                                                                                                              |
+| ordered_features       | None (optional) | None                      | used for feature subset selection, i.e., only selecting an ordered subset of features as model input                                                                                                              |
 | feature_specs          | dict (optional) | None                      | used for specifying field-wise configurations, such as ```embedding_dim```, ```feature_encoder``` for a specific field.                                                                                           |
 
 ### Implementation

@@ -8,9 +8,8 @@ Base:
     eval_steps: null
     debug_mode: False
     group_id: null
-    use_features: null
+    ordered_features: null
     feature_specs: null
-    feature_config: null
 
 PPNet_test:
     model: PPNet

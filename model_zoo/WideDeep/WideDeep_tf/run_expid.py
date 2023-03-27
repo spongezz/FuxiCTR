@@ -73,7 +73,7 @@ if __name__ == '__main__':
     test_result = {}
     if test_gen:
       test_result = model.evaluate(test_gen)
-    
+    model.save(filename="./model")
     result_filename = Path(args['config']).name.replace(".yaml", "") + '.csv'
     with open(result_filename, 'a+') as fw:
         fw.write(' {},[command] python {},[exp_id] {},[dataset_id] {},[train] {},[val] {},[test] {}\n' \
