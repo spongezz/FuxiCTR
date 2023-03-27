@@ -8,3 +8,8 @@
  20230326-235340,[command] python run_expid.py --expid DCN_default --gpu 0,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.677671 - AUC: 1.000000,[test] logloss: 0.677671 - AUC: 1.000000
  20230326-235435,[command] python run_expid.py --expid DCN_default --gpu 0,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.361838 - AUC: 0.723958,[test] logloss: 0.361838 - AUC: 0.723958
  20230327-035955,[command] python run_expid.py --expid DCN_test --gpu 0,[exp_id] DCN_test,[dataset_id] Taobao,[train] N.A.,[val] logloss: 0.811567 - AUC: 0.498203,[test] logloss: 0.808303 - AUC: 0.497844
+ 20230327-174913,[command] python run_expid.py --expid DCN_default --gpu 0,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.360930 - AUC: 0.760417,[test] logloss: 0.360930 - AUC: 0.760417
+ 20230327-181219,[command] python run_expid.py --gpu 0 --expid DCN_default,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.360930 - AUC: 0.760417,[test] logloss: 0.360930 - AUC: 0.760417
+ 20230327-181715,[command] python run_expid.py --gpu 0 --expid DCN_default,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.360930 - AUC: 0.760417,[test] logloss: 0.360930 - AUC: 0.760417
+ 20230327-181739,[command] python run_expid.py --gpu 0 --expid DCN_default,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.360930 - AUC: 0.760417,[test] logloss: 0.360930 - AUC: 0.760417
+ 20230327-181806,[command] python run_expid.py --gpu 0 --expid DCN_default,[exp_id] DCN_default,[dataset_id] tiny_tfrecord,[train] N.A.,[val] logloss: 0.360930 - AUC: 0.760417,[test] logloss: 0.360930 - AUC: 0.760417

@@ -64,6 +64,9 @@ if __name__ == '__main__':
     model.fit(train_gen, validation_data=valid_gen, **params)
     logging.info('****** Validation evaluation ******')
     valid_result = model.evaluate(valid_gen)
+    for i in train_gen:
+        model(i)
+        break
     model.save("./model/SavedModels/1")
     del train_gen, valid_gen
     gc.collect()
